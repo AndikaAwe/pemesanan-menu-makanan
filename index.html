@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Self Order Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aplikasi pemesanan menu makanan berbasis web">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Self Order</h1>
+  <nav class="categories">
+    <button data-cat="Semua" class="active">Semua</button>
+    <button data-cat="Makanan">Makanan</button>
+    <button data-cat="Minuman">Minuman</button>
+    <button data-cat="Snack">Snack</button>
+  </nav>
+</header>
+
+<!-- <button class="cart-toggle">🛒 Lihat Pesanan</button> -->
+
+<main class="app">
+
+  <section class="menu">
+    <div id="menuList" class="menu-list"></div>
+  </section>
+
+  <aside class="cart">
+    <h2>Pesanan</h2>
+
+    <div id="cartList" class="cart-list"></div>
+
+    <div class="cart-footer">
+      <div class="total">
+        Total: <strong id="totalPrice">Rp 0</strong>
+      </div>
+      <button id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
