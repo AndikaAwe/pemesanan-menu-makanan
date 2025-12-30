@@ -5,13 +5,12 @@
   <title>Self Order Menu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Aplikasi pemesanan menu makanan berbasis web">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="header">
-  <h1>Self Order</h1>
+  <h1>🍽️ Self Order</h1>
   <nav class="categories">
     <button data-cat="Semua" class="active">Semua</button>
     <button data-cat="Makanan">Makanan</button>
@@ -20,7 +19,12 @@
   </nav>
 </header>
 
-<button class="cart-toggle">🛒 Lihat Pesanan</button>
+<button class="cart-toggle">
+  🛒 Lihat Pesanan
+  <span class="cart-badge" style="display:none;">0</span>
+</button>
+
+<div class="cart-backdrop"></div>
 
 <main class="app">
 
@@ -29,15 +33,17 @@
   </section>
 
   <aside class="cart">
-    <h2>Pesanan</h2>
+    <button class="cart-close">✕</button>
+    <h2>🛒 Pesanan Anda</h2>
 
     <div id="cartList" class="cart-list"></div>
 
     <div class="cart-footer">
       <div class="total">
-        Total: <strong id="totalPrice">Rp 0</strong>
+        <span>Total Pembayaran:</span>
+        <strong id="totalPrice">Rp 0</strong>
       </div>
-      <button id="checkoutBtn">Checkout</button>
+      <button id="checkoutBtn">Checkout Sekarang</button>
     </div>
   </aside>
 
